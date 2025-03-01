@@ -31,6 +31,8 @@ public class DefaultHeaderBehaviours {
                         .headerConfig(HeaderConfig
                                 .headerConfig()
                                 .overwriteHeadersWithName("header1","header2")))
+
+.config(RestAssuredConfig.config().headerConfig(HeaderConfig.headerConfig().overwriteHeadersWithName("header1")))
                // .header("header1","value1 ")
                 .header("header1","value1 ","value2")
                 .header("header2","Value2")
