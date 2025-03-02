@@ -39,6 +39,6 @@ public class NewJson {
 
         System.out.println(jsonPath.getString("[0].address[0].city"));
 
-        System.out.println(jsonPath.getList("[0].address.city"));
+        System.out.println(jsonPath.getList("address.city"));
     }
 }
