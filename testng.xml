@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="classes" thread-count="2">
-    <test verbose="2" preserve-order="true" name="D:/KishanProject2025/RestAssuredWithRetargetCommon/src/main/java/DataShare/ThreadLocal22withDataAsMap.java">
-        <classes><class name="DataShare.ThreadLocal22withDataAsMap">
-            <methods>
-                <include name="createBooking"/>
-                <include name="getBookingById"/>
-            </methods>
-        </class>
+<suite name="All Test Suite">
+
+    <test verbose="2" preserve-order="true" name="D:/KishanProject2025/RestAssuredWithRetargetCommon/src/main/java/ITextContext/CreateBookingDetailsSuite.java">
+        <classes>
+            <class name="ITextContext.CreateBookingDetailsSuite">
+                <methods><include name="createBooking"/>
+                </methods>
+            </class>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="D:/KishanProject2025/RestAssuredWithRetargetCommon/src/main/java/DataShare/TestModuleWithThreadLocalAsMap1.java">
+    <test verbose="2" preserve-order="true" name="D:/KishanProject2025/RestAssuredWithRetargetCommon/src/main/java/ITextContext/GetBookingDetailsSuite.java">
         <classes>
-            <class name="DataShare.TestModuleWithThreadLocalAsMap1">
-                <methods>
-                    <include name="createBooking"/>
-                    <include name="getBookingById"/>
+            <class name="ITextContext.GetBookingDetailsSuite">
+                <methods><include name="getBooking"/>
                 </methods>
             </class>
         </classes>

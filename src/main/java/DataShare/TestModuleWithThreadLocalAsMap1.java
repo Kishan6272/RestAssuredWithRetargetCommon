@@ -26,7 +26,9 @@ public class TestModuleWithThreadLocalAsMap1 {
                 .time(Matchers.lessThan(5000L));
 
         bookingId=
-                RestAssured.given().spec(requestSpecification)
+                RestAssured.given().baseUri("https://restful-booker.herokuapp.com/")
+            .basePath("booking")
+            .contentType(ContentType.JSON)
                         .body("{\n" +
                                 "    \"firstname\" : \"J22i1m\",\n" +
                                 "    \"lastname\" : \"Brown\",\n" +
